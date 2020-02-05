@@ -74,11 +74,11 @@ public class NumberUtilities {
 
         for(int i = start; i <= stop; i++)
         {
-            int x = i;
+            Integer x = 1;
 
-            for(int n = 2; n <= exponent; n++)
+            for(int n = 1; n <= exponent; n++)
             {
-                x *= x;
+                x *= i;
             }
 
             output += x;
