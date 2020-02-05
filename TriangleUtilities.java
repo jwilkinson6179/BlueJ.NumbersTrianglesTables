@@ -31,7 +31,6 @@ public class TriangleUtilities {
 
     public static String getLargeTriangle() {
         return getTriangle(9);
-
-        // comment!
+        // A comment!
     }
 }
