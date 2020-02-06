@@ -16,21 +16,7 @@ public class TableUtilities {
         {
             for(int r = 1; r <= tableSize; r++)
             {
-                int digit = c * r;
-
-                /*
-                if(digit >= 0 && digit < 10)
-                {
-                    table = table + "  " + digit + " |"; 
-                } else if(digit < 100)
-                {
-                    table = table + " " + digit + " |";
-                } else
-                {
-                    table = table + digit + " |";
-                }
-                 */
-                table += String.format("%1$3s |", digit);
+                table += String.format("%1$3s |", c * r);
             }
             table += "\n";
         }
