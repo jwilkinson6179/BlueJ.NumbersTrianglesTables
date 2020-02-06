@@ -4,23 +4,13 @@
 public class NumberUtilities {
 
     public static String getRange(int stop) {
-        StringBuilder output = new StringBuilder();
-
-        for(int i = 0; i < stop; i++) {
-            output.append(i);
-        }
-        return output.toString();
+        String range = getRange(0, stop);
+        return range;
     }
 
     public static String getRange(int start, int stop) {
-        StringBuilder output = new StringBuilder();
-
-        for(int i = start; i < stop; i++)
-        {
-            output.append(i);
-        }
-
-        return output.toString();
+        String range = getRange(start, stop, 1);
+        return range;
     }
 
 
@@ -64,3 +54,6 @@ public class NumberUtilities {
         return output.toString();
     }
 }
+
+// 1234567891011
+// 1234567891011
