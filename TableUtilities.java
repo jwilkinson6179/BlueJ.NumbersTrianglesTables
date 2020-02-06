@@ -18,6 +18,7 @@ public class TableUtilities {
             {
                 int digit = c * r;
 
+                /*
                 if(digit >= 0 && digit < 10)
                 {
                     table = table + "  " + digit + " |"; 
@@ -28,6 +29,8 @@ public class TableUtilities {
                 {
                     table = table + digit + " |";
                 }
+                 */
+                table += String.format("%1$3s |", digit);
             }
             table += "\n";
         }
