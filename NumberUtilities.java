@@ -72,18 +72,9 @@ public class NumberUtilities {
     public static String getExponentiations(int start, int stop, int exponent) {
         String output = "";
 
-        for(int i = start; i <= stop; i++)
-        {
-            Integer x = 1;
-
-            for(int n = 1; n <= exponent; n++)
-            {
-                x *= i;
-            }
-
-            output += x;
+        for(int i = start; i <= stop; i++) {
+            output += String.format("%1$.0f", Math.pow(i, exponent));
         }
-
         return output;
     }
 }
