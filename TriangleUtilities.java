@@ -3,25 +3,25 @@
 public class TriangleUtilities {
 
     public static String getRow(int numberOfStars) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
 
         for(int i = 0; i < numberOfStars; i++)
         {
-            output += "*";
+            output.append("*");
         }
 
-        return output;
+        return output.toString();
     }
     
     public static String getTriangle(int numberOfRows) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
 
         for(int i = 1; i <= numberOfRows; i++)
         {
-            output += (getRow(i) + "\n");
+            output.append(getRow(i) + "\n");
         }
 
-        return output;
+        return output.toString();
     }
 
 
@@ -29,8 +29,5 @@ public class TriangleUtilities {
         return getTriangle(4);
     }
 
-    public static String getLargeTriangle() {
-        return getTriangle(9);
-        // A comment!
-    }
+    public static String getLargeTriangle() { return getTriangle(9); }
 }

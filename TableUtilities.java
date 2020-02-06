@@ -10,17 +10,17 @@ public class TableUtilities {
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        String table = "";
+        StringBuilder table = new StringBuilder();
 
         for(int c = 1; c <= tableSize; c++)
         {
             for(int r = 1; r <= tableSize; r++)
             {
-                table += String.format("%1$3s |", c * r);
+                table.append(String.format("%1$3d |", c * r));
             }
-            table += "\n";
+            table.append("\n");
         }
 
-        return table;
+        return table.toString();
     }
 }

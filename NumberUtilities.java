@@ -4,35 +4,35 @@
 public class NumberUtilities {
 
     public static String getRange(int stop) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
 
         for(int i = 0; i < stop; i++) {
-            output += i;
+            output.append(i);
         }
-        return output;
+        return output.toString();
     }
 
     public static String getRange(int start, int stop) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
 
         for(int i = start; i < stop; i++)
         {
-            output += i;
+            output.append(i);
         }
 
-        return output;
+        return output.toString();
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
 
         for(int i = start; i < stop; i += step)
         {
-            output += i;
+            output.append(i);
         }
 
-        return output;
+        return output.toString();
     }
 
     public static String getEvenNumbers(int start, int stop) {
@@ -56,11 +56,11 @@ public class NumberUtilities {
 
 
     public static String getExponentiations(int start, int stop, int exponent) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
 
         for(int i = start; i <= stop; i++) {
-            output += String.format("%1$.0f", Math.pow(i, exponent));
+            output.append(String.format("%.0f", Math.pow(i, exponent)));
         }
-        return output;
+        return output.toString();
     }
 }
